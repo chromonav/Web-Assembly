@@ -1,0 +1,1 @@
+source /Users/chinmay/emsdk/emsdk_env.sh

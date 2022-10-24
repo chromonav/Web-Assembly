@@ -22,15 +22,4 @@ int main() {
 
     cout << "Array generated in " << duration << " ms" <<endl;
 
-    
-    start = chrono::high_resolution_clock::now();
-    
-    sort(arr.begin(), arr.end());
-
-    end = chrono::high_resolution_clock::now();
-    duration = chrono::duration_cast<chrono::milliseconds>(end - start).count();
-
-    cout << "Array sorted in " << duration << " ms" <<endl;
-
-    
 }
