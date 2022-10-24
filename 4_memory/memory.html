@@ -7,6 +7,7 @@
 <body>
     <script>
         let memory = new WebAssembly.Memory({initial: 1, maximum: 1});
+        console.log(memory)
         let arr = new Uint32Array(memory.buffer);
         const importObject = {
             env: {
@@ -19,6 +20,7 @@
             {
                 arr[i] = i + 1;
             }
+            console.log(arr)
             instance.exports.reverse(0, 30);
             console.log(arr);
         })
