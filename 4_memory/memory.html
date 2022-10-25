@@ -7,7 +7,7 @@
 <body>
     <script>
         let memory = new WebAssembly.Memory({initial: 1, maximum: 1});
-        console.log(memory)
+        console.log(memory.buffer)
         let arr = new Uint32Array(memory.buffer);
         const importObject = {
             env: {

@@ -6,7 +6,7 @@
     <title>Module</title>
 </head>
 <body>
-    <script>
+    <!-- <script>
         var Module = {
             'onRuntimeInitialized': () => {
             //ccall(name, returnType, argumentTypes, args, opts) 
@@ -21,7 +21,10 @@
             console.log(fibo(7));
         }
     };
-    </script>
+    </script> -->
     <script src="module.js"></script>
+    <script>
+        console.log(Module().then(module=>{console.log(module)}))
+    </script>
 </body>
 </html>

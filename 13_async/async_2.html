@@ -8,7 +8,13 @@
 </head>
 
 <body>
-    <script src="./index.js"></script>
+
+    <script src="./a.out.js"></script>
+    <script>
+        Module.onRuntimeInitialized = _ => {
+            Module.delayAndReturn(true).then(r=>console.log(r))
+        };
+    </script>
 </body>
 
 </html>

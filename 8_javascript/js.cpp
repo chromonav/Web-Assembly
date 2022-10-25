@@ -16,7 +16,6 @@ extern "C" {
 
     EM_JS(void, sayHi, (), {
         document.getElementById('hi').innerText = 'HI';
-
     })
 
     int main() {

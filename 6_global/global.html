@@ -11,7 +11,7 @@
            console.log(instance.exports.getGlobal());
            global.value = 3;
            console.log(global.value);
-           console.log(instance.exports.incGlobal());
+           instance.exports.incGlobal()
            console.log(instance.exports.getGlobal());
 
        })
